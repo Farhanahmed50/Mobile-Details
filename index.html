@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="addBrands()">
+    <div class="mainContainer">
+
+        <div class="container">
+            <!-- <form onsubmit="getSelectedModel()"> -->
+            <select class="mobileBrand" name="mobileBrand" id="mobileBrand" onclick="selectedBrand()">
+                <option value="" disabled selected>Select Mobile Brand Name</option>
+            </select>
+            <select name="selectModel" id="selectModel" class="mobileModel">
+                <option value="" disabled selected>Select Model</option>
+            </select>
+            <!-- <input type="submit" value="Search"> -->
+            <button class="cta" onclick="getSelectedModel()" class="button">
+                <span>Search</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+            <!-- </form> -->
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>#</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mobile Name</td>
+                <td id="mobileName"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Operating System</td>
+                <td id="os"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Built In</td>
+                <td id="built_in"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ram</td>
+                <td id="ram"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Main Camera</td>
+                <td id="mainCamera"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Front Camera</td>
+                <td id="frontCamera"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Price</td>
+                <td id="price"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
